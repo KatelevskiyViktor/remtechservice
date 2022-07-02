@@ -10584,7 +10584,9 @@ a:focus {
 }
 
 .contact_form-container {
-  background-image: url(../storage/images/banner.jpg);
+  background-image: url(../storage/images/img_2320.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .contact_form-container form {
@@ -10596,9 +10598,9 @@ a:focus {
 .contact_form-container .contact_box {
   background-color: #fff;
   padding: 35px 40px;
-  width: 50%;
-  height: 60%;
-  margin: 100px 50px;
+  width: 70%;
+  /*height: 60%;*/
+  margin: 50px auto;
 }
 
 .contact_form-container form input,
@@ -10975,7 +10977,11 @@ a:focus {
 
 /* contacts */
 .map{
-    margin-left: 10%;
+    margin:0 auto;
+    max-width: 660px;
+    width: 100%;
+    height: 500px;
+
 }
 
 .contacts a{

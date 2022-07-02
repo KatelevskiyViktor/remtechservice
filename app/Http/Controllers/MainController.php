@@ -27,4 +27,8 @@ class MainController extends Controller
         $description = 'Если вы хотите связаться с нами по производству: противней, фризеры, головорубов, производственные(технологические) столы: Тел: ';
         return view('contacts', compact('title', 'description'));
     }
+
+    public function reload(){
+        return response()->json(['captcha' => captcha_img()]);
+    }
 }

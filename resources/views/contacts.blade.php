@@ -5,12 +5,12 @@
     <section class="contact_section layout_padding">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
-                        <div class="map" style="position:relative;overflow:hidden;">
-                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad98d77fa09da32c0cbc45229e2084c6c911adc028c54a4058dd2c4187b014990&amp;width=660&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
-                        </div>
+                <div class="col-md-6 px-4">
+                    <div class="map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad98d77fa09da32c0cbc45229e2084c6c911adc028c54a4058dd2c4187b014990&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                    </div>
                 </div>
-                <div class=" col-md-4 address_container">
+                <div class="col-md-4 address_container">
                     <div class="contacts">
                         <h3>
                             Адрес:

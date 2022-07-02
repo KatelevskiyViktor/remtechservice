@@ -70,7 +70,11 @@
 
 /* contacts */
 .map{
-    margin-left: 10%;
+    margin:0 auto;
+    max-width: 660px;
+    width: 100%;
+    height: 500px;
+
 }
 
 .contacts a{

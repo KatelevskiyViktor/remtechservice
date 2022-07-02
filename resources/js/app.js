@@ -1,18 +1,12 @@
 $(document).ready(function (){
-    $(function () {
-        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+
+        $('[data-toggle="lightbox"]').on('click', function(event) {
             event.preventDefault();
             $(this).ekkoLightbox({
                 alwaysShowClose: true
             });
         });
 
-        $('.filter-container').filterizr({gutterPixels: 3});
-        $('.btn[data-filter]').on('click', function() {
-            $('.btn[data-filter]').removeClass('active');
-            $(this).addClass('active');
-        });
-    })
 
     $(".owl-carousel").owlCarousel({
         loop: true,
@@ -29,25 +23,17 @@ $(document).ready(function (){
         }
     });
 
-    $(".nav_search-btn").click(function () {
-        if ($(".nav_search-input").hasClass("d-none")) {
-            event.preventDefault();
-            $(".nav_search-input")
-                .animate({
-                        left: "-1000px"
-                    },
-                    "1000000"
-                )
-                .removeClass("d-none");
-        } else {
-            $(".nav_search-input")
-                .animate({
-                        left: "0px"
-                    },
-                    "1000000"
-                )
-                .addClass("d-none");
-        }
+
+
+    $('#reload').click(function (e){
+        e.preventDefault();
+        $.ajax({
+            type: 'GET',
+            url: 'reload',
+            success: function (res){
+                $('#captcha-img').html(res.captcha);
+            }
+        })
     });
 
 })

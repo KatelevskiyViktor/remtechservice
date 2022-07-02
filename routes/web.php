@@ -18,4 +18,5 @@ Route::get('/', 'MainController@index')->name('home');
 Route::get('/gallery', 'MainController@gallery')->name('gallery');
 Route::get('/about', 'MainController@about')->name('about');
 Route::get('/contacts', 'MainController@contacts')->name('contacts');
+Route::get('/reload', 'MainController@reload');
 Route::match(['get', 'post'],'/send', 'ContactController@send')->name('send');

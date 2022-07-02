@@ -18,6 +18,7 @@ class ContactController extends Controller
         ]);
 
         if($request->method() == 'POST') {
+
             $body = "<p><b>Имя: </b>{$request->input('name')}</p>";
             $body .= "<p><b>E-mail: </b>{$request->input('email')}</p>";
             $body .= "<p><b>Сообщение: </b><br>" . nl2br($request->input('message')) . "</p>";

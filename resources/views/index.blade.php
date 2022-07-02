@@ -197,17 +197,16 @@
   <section class="contact_section layout_padding-top">
     <div class="container-fluid">
       <div class="row">
-        <div class=" col-md-6">
-            <div class="map" style="position:relative;overflow:hidden;">
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad98d77fa09da32c0cbc45229e2084c6c911adc028c54a4058dd2c4187b014990&amp;width=660&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div class="col-md-6 px-4">
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad98d77fa09da32c0cbc45229e2084c6c911adc028c54a4058dd2c4187b014990&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
             </div>
-
         </div>
-        <div class=" col-md-6 contact_form-container">
+        <div class="col-md-6 contact_form-container">
           <div class="contact_box">
               <h3>Связаться с вами?</h3>
               @include('alerts')
-            <form action="{{route('send')}}">
+            <form action="{{route('send')}}" method="post">
                 @csrf
               <input type="text" placeholder="Ваше имя" class="@error('name') is_invalid @enderror" value="{{old('name')}}" id="name" name="name" required>
                 @error('name')
@@ -224,12 +223,17 @@
                 @enderror
                 <div>
                                 <span id="captcha-img">
-{{--                                    {!! captcha_img() !!}--}}
+                                    {!! captcha_img() !!}
                                 </span>
+
                     <button id="reload"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
                             <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
                         </svg></button>
+                    <input type="text"  @error('captcha') is_invalid @enderror" name="captcha" required placeholder="Введите результат">
+                    @error('captcha')
+                    <div class="invalid_feedback">{{ $message }}</div>
+                    @enderror
                 </div>
               <div>
                 <button type="submit">
