@@ -1,7 +1,7 @@
 /* header */
 @font-face {
     font-family: "GOST type A";
-    src: url("../font/GOST_A.ttf") format("truetype");
+    src: url("../font/GOST_A.TTF") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -51,13 +51,29 @@
     background: url(../storage/images/slider1/protvini.jpg) no-repeat 50% 1%/cover;
 }
 .slider-img2{
-    background: url(../storage/images/slider2/lopatka_modulnaya.jpg) no-repeat 50% 1%/cover;
+    background: url(../storage/images/slider2/lopatka_modulnaya2.jpg) no-repeat 50% 1%/cover;
 }
 .slider-img3{
-    background: url(../storage/images/slider3/gib.jpg) no-repeat 50% 1%/cover;
+    background: url(../storage/images/slider3/gib2.jpg) no-repeat 50% 1%/cover;
 }
 .slider-img4{
-    background: url(../storage/images/slider4/defrost.jpg) no-repeat 50% 1%/cover;
+    background: url(../storage/images/slider4/defrost2.jpg) no-repeat 50% 1%/cover;
+}
+
+.sl-container{
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.sl-card{
+    max-width: 300px;
+    min-height: 300px;
+    margin: 5px 5px;
+
+}
+.sl-img-fluid{
+    max-width: 200px;
 }
 
 /* end First slider main page */
@@ -82,6 +98,20 @@
 }
 
 /* end contacts */
+
+/*Gallery*/
+.h_cat{
+    font-size: unset!important;
+}
+.rcenter{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.new_size{
+    min-width: 300px;
+}
+/*end Gallery*/
 
 /*form*/
 .is_invalid{
@@ -124,7 +154,7 @@
 @media (max-width: 837px) {
     .slider_section .slider_box .slider-detail .slider_detail-heading h1 {
         font-weight: 700;
-        font-size: 20px;
+        font-size: 16px;
         text-transform: uppercase;
     }
     .slider_section .slider_box .slider-detail {
@@ -176,5 +206,33 @@
     }
     .slider_section .slider_box .fixed_company-detail p{
         font-size: 15px;
+    }
+
+
+}
+
+@media(max-width: 740px) {
+    .slider_section .carousel-indicators{
+        top: 95%;
+        left: 25%;
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
+        align-items: center;
+    }
+}
+@media(max-width: 390px) {
+    .logo_box img{
+        width: 80%;
+    }
+
+    .middle_header {
+        font-size: 10px;
+        margin-left: 80px;
+        margin-top: -20px;
+    }
+    .company_name {
+        font-size: 28px;
+        padding: unset;
     }
 }

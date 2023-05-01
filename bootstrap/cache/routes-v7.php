@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::55WAfwAMUGcxdXuC',
+            '_route' => 'generated::XJNhtkL31SzB3L7s',
           ),
           1 => NULL,
           2 => 
@@ -44,7 +44,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::UvrGY0bIQ7QGSajY',
+            '_route' => 'generated::0XnLNH9QtiKdgUxI',
           ),
           1 => NULL,
           2 => 
@@ -144,7 +144,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::MhnzboN9UjF8hnBa',
+            '_route' => 'generated::d6WoagnEOb21vNJr',
           ),
           1 => NULL,
           2 => 
@@ -179,10 +179,29 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/send-from-footer' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'send.from.footer',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/captcha(?|/api(?:/([^/]++))?(*:36)|(?:/([^/]++))?(*:57)))/?$}sDu',
+      0 => '{^(?|/captcha(?|/api(?:/([^/]++))?(*:36)|(?:/([^/]++))?(*:57))|/gallery/([^/]++)(?|(*:85)|/([^/]++)(*:101)))/?$}sDu',
     ),
     3 => 
     array (
@@ -192,7 +211,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::0G7nKNMzSs3z9uC5',
+            '_route' => 'generated::69nPQFaWkVOpsMJM',
             'config' => NULL,
           ),
           1 => 
@@ -216,12 +235,59 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::W9P9OaHwRxz52epm',
+            '_route' => 'generated::spwxpdOL9dkNUBSA',
             'config' => NULL,
           ),
           1 => 
           array (
             0 => 'config',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      85 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'gallery.category',
+          ),
+          1 => 
+          array (
+            0 => 'category',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      101 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'gallery.subcat',
+          ),
+          1 => 
+          array (
+            0 => 'category',
+            1 => 'subcat',
           ),
           2 => 
           array (
@@ -249,7 +315,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::55WAfwAMUGcxdXuC' => 
+    'generated::XJNhtkL31SzB3L7s' => 
     array (
       'methods' => 
       array (
@@ -270,7 +336,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::55WAfwAMUGcxdXuC',
+        'as' => 'generated::XJNhtkL31SzB3L7s',
       ),
       'fallback' => false,
       'defaults' => 
@@ -286,7 +352,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::0G7nKNMzSs3z9uC5' => 
+    'generated::69nPQFaWkVOpsMJM' => 
     array (
       'methods' => 
       array (
@@ -302,7 +368,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::0G7nKNMzSs3z9uC5',
+        'as' => 'generated::69nPQFaWkVOpsMJM',
       ),
       'fallback' => false,
       'defaults' => 
@@ -318,7 +384,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::W9P9OaHwRxz52epm' => 
+    'generated::spwxpdOL9dkNUBSA' => 
     array (
       'methods' => 
       array (
@@ -334,7 +400,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::W9P9OaHwRxz52epm',
+        'as' => 'generated::spwxpdOL9dkNUBSA',
       ),
       'fallback' => false,
       'defaults' => 
@@ -350,7 +416,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::UvrGY0bIQ7QGSajY' => 
+    'generated::0XnLNH9QtiKdgUxI' => 
     array (
       'methods' => 
       array (
@@ -367,13 +433,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:295:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:77:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000005804a9570000000056c905ce";}";s:4:"hash";s:44:"f34K6TIeEiXxv3vzpFaTGzuqjXgkzY8Rbj+poe5eIqI=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"0000000005232a3f000000000f1eac69";}";s:4:"hash";s:44:"Qt6uB6m0RBwff4gtXBhvBvPENI6JD/Qp1sl4DqiX09s=";}}',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::UvrGY0bIQ7QGSajY',
+        'as' => 'generated::0XnLNH9QtiKdgUxI',
       ),
       'fallback' => false,
       'defaults' => 
@@ -440,14 +506,88 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\MainController@gallery',
-        'controller' => 'App\\Http\\Controllers\\MainController@gallery',
+        'uses' => 'App\\Http\\Controllers\\GalleryController@gallery',
+        'controller' => 'App\\Http\\Controllers\\GalleryController@gallery',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
         'where' => 
         array (
         ),
         'as' => 'gallery',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'gallery.category' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'gallery/{category}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\GalleryController@gallery_category',
+        'controller' => 'App\\Http\\Controllers\\GalleryController@gallery_category',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'gallery.category',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'gallery.subcat' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'gallery/{category}/{subcat}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\GalleryController@gallery_subcat_photos',
+        'controller' => 'App\\Http\\Controllers\\GalleryController@gallery_subcat_photos',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'gallery.subcat',
       ),
       'fallback' => false,
       'defaults' => 
@@ -537,7 +677,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::MhnzboN9UjF8hnBa' => 
+    'generated::d6WoagnEOb21vNJr' => 
     array (
       'methods' => 
       array (
@@ -558,7 +698,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::MhnzboN9UjF8hnBa',
+        'as' => 'generated::d6WoagnEOb21vNJr',
       ),
       'fallback' => false,
       'defaults' => 
@@ -597,6 +737,42 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'send',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'send.from.footer' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'send-from-footer',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\ContactController@SendFromFooter',
+        'controller' => 'App\\Http\\Controllers\\ContactController@SendFromFooter',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'send.from.footer',
       ),
       'fallback' => false,
       'defaults' => 

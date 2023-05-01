@@ -5,7 +5,14 @@
        </div>
     @endif
 
-    @if ($errors->any() || session('error'))
+   @if(session('success_footer'))
+       <div class="alert alert-success">
+           {{ session('success_footer') }}
+       </div>
+   @endif
+
+
+   @if($errors->any() || session('error'))
         <div class="alert alert-danger">
             {{session('error')}}
             <ul>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Gallery;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -11,11 +12,7 @@ class MainController extends Controller
         $description = 'РЕМТЕХСЕРВИС - производство специального технологического оборудования.';
         return view('index', compact('title', 'description'));
     }
-    public function gallery(){
-        $title = 'Галерея';
-        $description = 'Мы произвдим специального технологического оборудования производимиого. Наши работы можно посмотреть здесь';
-        return view('gallery', compact('title', 'description'));
-    }
+
     public function about(){
         $title = 'О нас';
         $description = 'Делаем: транспортеры, ванны, противня, фризеры, головорубы, телеги, производственные(технологические) столы. ';

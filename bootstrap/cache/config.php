@@ -1,7 +1,7 @@
 <?php return array (
   'app' => 
   array (
-    'name' => 'Site.REMTECHSERVICE',
+    'name' => 'SITE.REMTECHSERVICE',
     'env' => 'local',
     'debug' => true,
     'url' => 'http://localhost',
@@ -379,7 +379,7 @@
       array (
         'driver' => 'sqlite',
         'url' => NULL,
-        'database' => 'laravel',
+        'database' => 'laravel_rts',
         'prefix' => '',
         'foreign_key_constraints' => true,
       ),
@@ -389,9 +389,9 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'laravel',
+        'database' => 'laravel_rts',
         'username' => 'root',
-        'password' => '',
+        'password' => 'root',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -409,9 +409,9 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'laravel',
+        'database' => 'laravel_rts',
         'username' => 'root',
-        'password' => '',
+        'password' => 'root',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -424,9 +424,9 @@
         'url' => NULL,
         'host' => '127.0.0.1',
         'port' => '3306',
-        'database' => 'laravel',
+        'database' => 'laravel_rts',
         'username' => 'root',
-        'password' => '',
+        'password' => 'root',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -641,7 +641,7 @@
     'from' => 
     array (
       'address' => 'remt3chservis@yandex.ru',
-      'name' => 'Site.REMTECHSERVICE',
+      'name' => 'SITE.REMTECHSERVICE',
     ),
     'markdown' => 
     array (

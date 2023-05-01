@@ -17,7 +17,7 @@
               <div class="slider_detail-heading">
 
                   <h1>
-                      Прозводство нестандартного технологического оборудования
+                      Производство нестандартного технологического оборудования
                   </h1>
               </div>
 
@@ -86,7 +86,7 @@
                       <div class="slider_detail-heading">
 
                           <h1>
-                              Услуги по оргоннодуговой сварке
+                              Услуги по аргонодуговой сварке
                           </h1>
                       </div>
                       <div class="slider_detail-text">
@@ -124,7 +124,7 @@
       <div class="row">
         <div class=" col-md-6">
           <div>
-            <img class="img-fluid" src="{{asset('storage/images/slider1/protvini.jpg')}}" alt="Протвини" />
+            <img class="img-fluid" src="{{asset('storage/images/slider1/welcome.jpg')}}" alt="Протвини" />
           </div>
         </div>
         <div class=" col-md-6">
@@ -175,10 +175,10 @@
           <a href="{{route('gallery')}}"> Ванны </a>
         </div>
         <div class="service_img-box i-box-3">
-          <a href="{{route('gallery')}}"> Руб </a>
+          <a href="{{route('gallery')}}"> Танспортёры </a>
         </div>
         <div class="service_img-box i-box-4">
-          <a href="{{route('gallery')}}"> Головоруб</a>
+          <a href="{{route('gallery')}}"> Телеги</a>
         </div>
       </div>
       <div class="service_btn">
@@ -212,11 +212,14 @@
                 @error('name')
                 <div class="invalid_feedback">{{ $message }}</div>
                 @enderror
-              <input class="@error('name') is_invalid @enderror" type="email" placeholder="Эл. почта" value="{{old('email')}}" id="email" name="email" required>
+              <input class="@error('email') is_invalid @enderror" type="email" placeholder="Эл. почта" value="{{old('email')}}" id="email" name="email" required>
                 @error('email')
                 <div class="invalid_feedback">{{ $message }}</div>
                 @enderror
-              <input class="@error('message') is_invalid @enderror" type="tel" pattern="[8][0-9]{3}[0-9]{3}[0-9]{4}" placeholder="89998887766" id="phone" name="phone" required>
+              <input class="@error('phone') is_invalid @enderror" type="tel" pattern="[8][0-9]{3}[0-9]{3}[0-9]{4}" placeholder="89998887766" id="phone" name="phone" required>
+                @error('phone')
+                <div class="invalid_feedback">{{ $message }}</div>
+                @enderror
               <input class="@error('message') is_invalid @enderror" type="text" placeholder="Сообщение" value="{{old('message')}}" id="message" name="message" required>
                 @error('message')
                 <div class="invalid_feedback">{{ $message }}</div>

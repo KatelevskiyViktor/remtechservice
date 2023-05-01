@@ -29,6 +29,21 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
     </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(89901749, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/89901749" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
 <body>
@@ -81,10 +96,10 @@
 <section class="info_section layout_padding">
     <div class="container">
         <div class="row">
-            <div class=" col-md-4 info_detail">
+            <div class="col-md-4 info_detail">
                 <div>
                     <p>
-                        Производим специальное технологическое оборудование, такое как: транспортеры, ванны, противня, фризеры, головорубы, телеги, производственные(технологические) столы. А также отдельные элементы механизмов производства технологической продукции.
+                        Производим специальное технологическое оборудование, такое как: транспортеры, ванны, противня, фризеры, головорубы, телеги, производственные (технологические) столы. А также отдельные элементы механизмов производства технологической продукции.
                     </p>
                 </div>
             </div>
@@ -99,9 +114,9 @@
                             <span> Кола, Кильдинское шоссе 18б
                 </span>
                         </a>
-                        <a href="tel:+79217247351">
+                        <a href="tel:+79512975469">
                             <img src="{{asset('storage/images/phone.png')}}" alt="Телефон ООО «РЕМТЕХСЕРВИС»">
-                            <span> Тел: +7 (921) 724-73-51
+                            <span> Тел: +7 (951) 297-54-69
                 </span>
                         </a>
                         <a href="mailto:rts-murmansk@rambler.ru">
@@ -110,18 +125,30 @@
                   Эл. почта: rts-murmansk@rambler.ru
                 </span>
                         </a>
+                        <!-- Yandex.Metrika informer -->
+                        <a href="https://metrika.yandex.ru/stat/?id=89901749&amp;from=informer"
+                           target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/89901749/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+                                                               style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="89901749" data-lang="ru" /></a>
+                        <!-- /Yandex.Metrika informer -->
                     </div>
                 </div>
             </div>
             <div class=" col-md-4 news_container">
-                <div>
                     <div>
                         <h3>
                             Написать вам:
 
                         </h3>
-                        <form action="">
-                            <input type="email" placeholder="Введите свою почту">
+                        @include('alerts')
+                        <form action="{{route('send.from.footer')}}" method="post">
+                            @csrf
+                            <input class="@error('message') is_invalid @enderror"
+                                   type="tel" pattern="[8][0-9]{3}[0-9]{3}[0-9]{4}"
+                                   placeholder="89998887766" id="phone" name="phone"
+                                   required>
+                            @error('message')
+                                <div class="invalid_feedback">{{ $message }}</div>
+                            @enderror
                             <div>
                                 <button type="submit">
                                     Отправить
@@ -162,6 +189,7 @@
     <p>
         Copyright &copy; 2022 ООО «РЕМТЕХСЕРВИС»
     </p>
+
 </section>
 <!-- footer section -->
 

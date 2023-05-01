@@ -32,7 +32,7 @@ return [
     ],
     'boolean' => 'The :attribute field must be true or false.',
     'confirmed' => ':attribute не совпадают.',
-    'captcha' => 'Вы неправильно ввели буквы c картинки',
+    'captcha' => 'Вы ввели неправильный результат с картинки',
     'current_password' => 'The password is incorrect.',
     'date' => 'The :attribute is not a valid date.',
     'date_equals' => 'The :attribute must be a date equal to :date.',

@@ -311,17 +311,17 @@ a:focus {
 
 .service_img-container .service_img-box.i-box-2 {
   width: 40%;
-  background-image: url(../storage/images/vanna.jpg);
+  background-image: url(../storage/images/vanna2.jpg);
 }
 
 .service_img-container .service_img-box.i-box-3 {
   width: 40%;
-  background-image: url(../storage/images/slider3/rub.jpg);
+  background-image: url(../storage/images/transportyori.jpg);
 }
 
 .service_img-container .service_img-box.i-box-4 {
   width: 60%;
-  background-image: url(../storage/images/golovorub.jpg);
+  background-image: url(../storage/images/telegi.jpg);
 }
 
 .service_section .service_img-container a,
@@ -546,9 +546,7 @@ a:focus {
 }
 
 .contact_form-container {
-  background-image: url(../storage/images/img_2320.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
 }
 
 .contact_form-container form {
